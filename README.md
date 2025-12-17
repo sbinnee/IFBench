@@ -3,6 +3,23 @@
 This repo contains IFBench, which is a new, challenging benchmark for precise instruction following.
 Read the <a href="https://arxiv.org/pdf/2507.02833">IFBench paper</a>, accepted to NeurIPS 2025, D&B.
 
+## Changes
+* relative imports to use it as a module to other projects
+* disable spacy download in import
+
+    > [!IMPORTANT]
+    > Users need to manually install the required model.
+
+    ```bash
+    # option 1: with spacy cli cmd
+    spacy download en_core_web_sm
+
+    # option 2: using uv
+    uv add --dev pip
+    source .venv/bin/activate
+    python -m spacy download en_core_web_sm
+    ```
+
 ## IFBench
 IFBench consists of two parts:
 

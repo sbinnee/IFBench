@@ -20,7 +20,7 @@ import re
 import string
 from typing import Dict, Optional, Sequence, Union
 import nltk
-from spacy.cli import download
+# from spacy.cli import download
 import emoji
 import syllapy
 import unicodedata
@@ -30,7 +30,7 @@ import io
 
 import instructions_util
 
-download('en_core_web_sm')
+# download('en_core_web_sm')
 
 logger = logging.getLogger(__name__)
 
